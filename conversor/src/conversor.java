@@ -37,9 +37,6 @@ public class conversor {
                         .uri(URI.create(uri))
                         .build();
 
-                HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-                String jsonString = response.body();
-                System.out.println("Datos obtenidos de la API: " + jsonString);
 
                 // Parsear el JSON usando Gson
                 Gson gson = new Gson();
